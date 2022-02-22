@@ -7,7 +7,7 @@ fdfind -t f -x sed -i 's/https:\/\/xn--931a.moe\/assets\/not-found.jpg/https:\/\
 sed -i 's/https:\/\/www.google.com/https:\/\/gowogle.voring.me/g' ./packages/client/src/components/google.vue
 sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
 wget https://cdn.discordapp.com/attachments/810799100940255260/943684879076446218/calcTrollage.ico
-mv calcTrollage.ico packages/backend/assets/favicon.ico
+mv ./calcTrollage.ico ./packages/backend/assets/favicon.ico
 echo "Patched files!"
 yarn
 NODE_ENV=production npm run build
