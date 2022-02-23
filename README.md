@@ -1,8 +1,8 @@
 # misskey-patches
 The patches used on https://stop.voring.me
 
-- Favicon
-- Error images
+- Favicon/icon
+- Images (error/info/unknown user)
 - CW in replies on by default
 - Change default emojis
 
