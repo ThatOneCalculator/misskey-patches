@@ -8,8 +8,11 @@ sed -i 's/https:\/\/www.google.com/https:\/\/gowogle.voring.me/g' ./packages/cli
 sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
 sed -i '20s/false/true/' ./packages/client/src/store.ts
 sed -i "56s/'🎉', '💢', '😥', '😇', '🍮'/'😥', '😇', ':calchigh:', ':calcmentalbreakdowncrying:', ':amongass:'/" ./packages/client/src/store.ts
-wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/favicon.ico
-mv ./favicon.ico ./packages/backend/assets/
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/favicon.ico -O ./packages/backend/assets/favicon.ico
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/apple-touch-icon.png -O ./packages/backend/assets/apple-touch-icon.png
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/user-unknown.png -O ./packages/backend/assets/user-unknown.png
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/192.png -O ./packages/backend/assets/icons/192.png
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/512.png -O ./packages/backend/assets/icons/512.png
 echo "Patched files!"
 yarn
 NODE_ENV=production npm run build
