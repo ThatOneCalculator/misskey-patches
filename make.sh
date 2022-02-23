@@ -6,8 +6,8 @@ fdfind -t f -x sed -i 's/https:\/\/xn--931a.moe\/assets\/info.jpg/https:\/\/cdn.
 fdfind -t f -x sed -i 's/https:\/\/xn--931a.moe\/assets\/not-found.jpg/https:\/\/cdn.discordapp.com\/attachments\/810799100940255260\/941040122609147966\/calcponder_nobg.png/g' {} \;
 sed -i 's/https:\/\/www.google.com/https:\/\/gowogle.voring.me/g' ./packages/client/src/components/google.vue
 sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
-wget https://github.com/ThatOneCalculator/misskey-patches/raw/main/favicon.ico
-wget https://github.com/ThatOneCalculator/misskey-patches/raw/main/store.ts
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/favicon.ico
+wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/store.ts
 mv ./favicon.ico ./packages/backend/assets/
 mv ./store.ts ./packages/client/src/
 echo "Patched files!"
