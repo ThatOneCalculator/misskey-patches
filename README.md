@@ -10,6 +10,11 @@ The patches used on https://stop.voring.me
 - Images (error/info/unknown user)
 
 ### Usage:
-Place `make.sh` into your Misskey directory, make it executable, then run `./make.sh` to patch and build Misskey.
+```
+cd misskey
+git clone https://github.com/ThatOneCalculator/misskey-patches/ patches
+chmod +x ./patches/make.sh
+./patches/make.sh
+```
 
 I also add the [Rosé Pine for Misskey](https://github.com/rose-pine/misskey) themes seperately, given they don't need to be re-added every change.
