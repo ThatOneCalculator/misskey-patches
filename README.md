@@ -2,6 +2,7 @@
 The patches used on https://stop.voring.me
 
 - Favicon/icon
+- Search syntax URL
 - Images (error/info/unknown user)
 - Change default emojis
 
