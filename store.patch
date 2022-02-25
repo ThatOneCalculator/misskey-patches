@@ -1,7 +1,7 @@
-diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
-index 39f5e4a65..879176df9 100644
---- a/packages/client/src/store.ts
-+++ b/packages/client/src/store.ts
+diff --git a/./packages/client/src/store.ts b/./patches/store.ts
+index 39f5e4a65..cc481fa0e 100644
+--- a/./packages/client/src/store.ts
++++ b/./store.ts
 @@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	reactions: {
@@ -11,30 +11,55 @@ index 39f5e4a65..879176df9 100644
  	},
  	mutedWords: {
  		where: 'account',
-@@ -68,17 +68,20 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -68,17 +68,19 @@ export const defaultStore = markRaw(new Storage('base', {
  		where: 'deviceAccount',
  		default: [
  			'notifications',
-+			'mentions',
- 			'messaging',
+-			'messaging',
 -			'drive',
++			'mentions',
  			'followRequests',
++			'messaging',
  			'-',
 -			'gallery',
  			'featured',
  			'explore',
 -			'announcements',
-+			'-',
-+			'drive',
+ 			'search',
+ 			'-',
+-			'ui',
 +			'pages',
 +			'gallery',
 +			'clips',
- 			'-',
--			'ui',
++			'drive',
++			'-'
  		]
  	},
  	visibility: {
-@@ -254,13 +257,13 @@ type Plugin = {
+@@ -152,11 +154,11 @@ export const defaultStore = markRaw(new Storage('base', {
+ 	},
+ 	useBlurEffectForModal: {
+ 		where: 'device',
+-		default: true
++		default: false
+ 	},
+ 	useBlurEffect: {
+ 		where: 'device',
+-		default: true
++		default: false
+ 	},
+ 	showFixedPostForm: {
+ 		where: 'device',
+@@ -180,7 +182,7 @@ export const defaultStore = markRaw(new Storage('base', {
+ 	},
+ 	instanceTicker: {
+ 		where: 'device',
+-		default: 'remote' as 'none' | 'remote' | 'always'
++		default: 'always' as 'none' | 'remote' | 'always'
+ 	},
+ 	reactionPickerSize: {
+ 		where: 'device',
+@@ -254,13 +256,13 @@ type Plugin = {
   */
  export class ColdDeviceStorage {
  	public static default = {
