@@ -3,6 +3,7 @@ The patches used on https://stop.voring.me
 
 - Favicon/icon
 - Add [Rosé Pine for Misskey](https://github.com/rose-pine/misskey) themes and set to default
+- Add Gruvbox themes
 - Default menu items
 - Default emojis
 - Turn off new note sound
