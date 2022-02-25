@@ -13,11 +13,11 @@ sed -i "70/]/'notifications', 'mentions', 'messaging', 'followRequests', '-', 'd
 sed -i '236s/1/0/' ./packages/client/src/store.ts
 sed -i 's/-light/-rosepinedawn/g' ./packages/client/src/store.ts
 sed -i 's/-dark/-rosepine/g' ./packages/client/src/store.ts
-mv patches/favicon.ico -O ./packages/backend/assets/favicon.ico
-mv patches/apple-touch-icon.png -O ./packages/backend/assets/apple-touch-icon.png
-mv patches/user-unknown.png
-mv patches/192.png -O ./packages/backend/assets/icons/192.png
-mv patches/512.png -O ./packages/backend/assets/icons/512.png
+mv patches/favicon.ico ./packages/backend/assets/favicon.ico
+mv patches/apple-touch-icon.png ./packages/backend/assets/apple-touch-icon.png
+mv patches/user-unknown.png ./packages/backend/assets/icons/user-unknown.png
+mv patches/192.png ./packages/backend/assets/icons/192.png
+mv patches/512.png ./packages/backend/assets/icons/512.png
 echo "Patched files!"
 yarn
 NODE_ENV=production npm run build
