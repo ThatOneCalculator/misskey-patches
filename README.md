@@ -13,6 +13,5 @@ The patches used on https://stop.voring.me
 ```
 cd misskey
 git clone https://github.com/ThatOneCalculator/misskey-patches/ patches
-chmod +x ./patches/make.sh
 ./patches/make.sh
 ```
