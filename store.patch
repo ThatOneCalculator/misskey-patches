@@ -1,0 +1,56 @@
+diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
+index 39f5e4a65..879176df9 100644
+--- a/packages/client/src/store.ts
++++ b/packages/client/src/store.ts
+@@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
+ 	},
+ 	reactions: {
+ 		where: 'account',
+-		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮']
++		default: ['👍', '❤️', '😆', '🤔', '😮', '😥', '😇', ':calchigh:', ':calcmentalbreakdowncrying:', ':amongass:']
+ 	},
+ 	mutedWords: {
+ 		where: 'account',
+@@ -68,17 +68,20 @@ export const defaultStore = markRaw(new Storage('base', {
+ 		where: 'deviceAccount',
+ 		default: [
+ 			'notifications',
++			'mentions',
+ 			'messaging',
+-			'drive',
+ 			'followRequests',
+ 			'-',
+-			'gallery',
+ 			'featured',
+ 			'explore',
+-			'announcements',
+-			'search',
++			'antennas',
++			'-',
++			'drive',
++			'pages',
++			'gallery',
++			'clips',
+ 			'-',
+-			'ui',
++			'search'
+ 		]
+ 	},
+ 	visibility: {
+@@ -254,13 +257,13 @@ type Plugin = {
+  */
+ export class ColdDeviceStorage {
+ 	public static default = {
+-		lightTheme: require('@/themes/l-light.json5') as Theme,
+-		darkTheme: require('@/themes/d-dark.json5') as Theme,
++		lightTheme: require('@/themes/l-rosepinedawn.json5') as Theme,
++		darkTheme: require('@/themes/d-rosepine.json5') as Theme,
+ 		syncDeviceDarkMode: true,
+ 		plugins: [] as Plugin[],
+ 		mediaVolume: 0.5,
+ 		sound_masterVolume: 0.3,
+-		sound_note: { type: 'syuilo/down', volume: 1 },
++		sound_note: { type: 'syuilo/down', volume: 0 },
+ 		sound_noteMy: { type: 'syuilo/up', volume: 1 },
+ 		sound_notification: { type: 'syuilo/pope2', volume: 1 },
+ 		sound_chat: { type: 'syuilo/pope1', volume: 1 },
