@@ -7,8 +7,7 @@ fdfind -t f -x sed -i 's/https:\/\/xn--931a.moe\/assets\/not-found.jpg/https:\/\
 sed -i 's/https:\/\/www.google.com/https:\/\/gowogle.voring.me/g' ./packages/client/src/components/google.vue
 sed -i 's/Misskey expands the world of the Fediverse/Stop posting about Among Us/g' ./locales/en-US.yml
 sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
-sed -i '20s/false/true/' ./packages/client/src/store.ts
-sed -i "56s/'🎉', '💢', '😥', '😇', '🍮'/'😥', '😇', ':calchigh:', ':calcmentalbreakdowncrying:', ':amongass:'/" ./packages/client/src/store.ts
+sed -i "s/'🎉', '💢', '😥', '😇', '🍮'/'😥', '😇', ':calchigh:', ':calcmentalbreakdowncrying:', ':amongass:'/" ./packages/client/src/store.ts
 wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/favicon.ico -O ./packages/backend/assets/favicon.ico
 wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/apple-touch-icon.png -O ./packages/backend/assets/apple-touch-icon.png
 wget -q https://github.com/ThatOneCalculator/misskey-patches/raw/main/user-unknown.png -O ./packages/backend/assets/user-unknown.png
