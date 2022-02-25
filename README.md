@@ -2,6 +2,9 @@
 The patches used on https://stop.voring.me
 
 - Favicon/icon
+- Default menu items
+- Default theme
+- Turn off new note sound
 - Search syntax URL
 - Images (error/info/unknown user)
 - Change default emojis
