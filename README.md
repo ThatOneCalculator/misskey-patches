@@ -2,8 +2,8 @@
 The patches used on https://stop.voring.me
 
 - Favicon/icon
+- Add [Rosé Pine for Misskey](https://github.com/rose-pine/misskey) themes and set to default
 - Default menu items
-- Default theme
 - Default emojis
 - Turn off new note sound
 - Search syntax URL
@@ -16,5 +16,3 @@ git clone https://github.com/ThatOneCalculator/misskey-patches/ patches
 chmod +x ./patches/make.sh
 ./patches/make.sh
 ```
-
-I also add the [Rosé Pine for Misskey](https://github.com/rose-pine/misskey) themes seperately, given they don't need to be re-added every change.
