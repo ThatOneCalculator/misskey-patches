@@ -12,7 +12,7 @@ mv patches/apple-touch-icon.png ./packages/backend/assets/apple-touch-icon.png
 mv patches/user-unknown.png ./packages/backend/assets/icons/user-unknown.png
 mv patches/192.png ./packages/backend/assets/icons/192.png
 mv patches/512.png ./packages/backend/assets/icons/512.png
-mv patches/store.ts ./packages/client/src/store.ts
+git apply patches/store.patch
 echo "Patched files!"
 yarn
 NODE_ENV=production npm run build
