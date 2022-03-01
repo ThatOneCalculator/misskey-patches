@@ -1,7 +1,7 @@
 diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
 index e6a2f4290..db455473a 100644
---- a/./packages/client/src/store.ts
-+++ b/./packages/client/src/store.ts
+--- a/packages/client/src/store.ts
++++ b/packages/client/src/store.ts
 @@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	reactions: {
