@@ -1,7 +1,7 @@
 diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
-index 39f5e4a65..cc481fa0e 100644
---- a/packages/client/src/store.ts
-+++ b/packages/client/src/store.ts
+index e6a2f4290..db455473a 100644
+--- a/./packages/client/src/store.ts
++++ b/./packages/client/src/store.ts
 @@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	reactions: {
@@ -35,7 +35,7 @@ index 39f5e4a65..cc481fa0e 100644
  		]
  	},
  	visibility: {
-@@ -152,11 +154,11 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -152,11 +153,11 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	useBlurEffectForModal: {
  		where: 'device',
@@ -49,7 +49,7 @@ index 39f5e4a65..cc481fa0e 100644
  	},
  	showFixedPostForm: {
  		where: 'device',
-@@ -180,7 +182,7 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -180,7 +181,7 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	instanceTicker: {
  		where: 'device',
@@ -58,15 +58,7 @@ index 39f5e4a65..cc481fa0e 100644
  	},
  	reactionPickerSize: {
  		where: 'device',
-@@ -254,13 +256,13 @@ type Plugin = {
-  */
- export class ColdDeviceStorage {
- 	public static default = {
--		lightTheme: require('@/themes/l-light.json5') as Theme,
--		darkTheme: require('@/themes/d-dark.json5') as Theme,
-+		lightTheme: require('@/themes/l-rosepinedawn.json5') as Theme,
-+		darkTheme: require('@/themes/d-rosepine.json5') as Theme,
- 		syncDeviceDarkMode: true,
+@@ -264,7 +265,7 @@ export class ColdDeviceStorage {
  		plugins: [] as Plugin[],
  		mediaVolume: 0.5,
  		sound_masterVolume: 0.3,
