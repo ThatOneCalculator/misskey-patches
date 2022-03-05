@@ -11,7 +11,7 @@ index e6a2f4290..db455473a 100644
  	},
  	mutedWords: {
  		where: 'account',
-@@ -68,17 +68,18 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -68,17 +68,19 @@ export const defaultStore = markRaw(new Storage('base', {
  		where: 'deviceAccount',
  		default: [
  			'notifications',
@@ -30,6 +30,7 @@ index e6a2f4290..db455473a 100644
 +			'pages',
 +			'gallery',
 +			'-',
++			'favorites',
 +			'drive',
 +			'clips',
  		]
