@@ -13,7 +13,7 @@ sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
 cp patches/favicon.ico ./packages/backend/assets/favicon.ico
 cp patches/favicon.png ./packages/backend/assets/favicon.png
 cp patches/apple-touch-icon.png ./packages/backend/assets/apple-touch-icon.png
-cp patches/user-unknown.png ./packages/backend/assets/icons/user-unknown.png
+cp patches/user-unknown.png ./packages/backend/assets/user-unknown.png
 cp patches/192.png ./packages/backend/assets/icons/192.png
 cp patches/512.png ./packages/backend/assets/icons/512.png
 cp patches/512.png ./packages/client/assets/icons/about-icon.png
