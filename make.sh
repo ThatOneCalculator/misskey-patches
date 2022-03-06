@@ -16,7 +16,8 @@ cp patches/apple-touch-icon.png ./packages/backend/assets/apple-touch-icon.png
 cp patches/user-unknown.png ./packages/backend/assets/user-unknown.png
 cp patches/192.png ./packages/backend/assets/icons/192.png
 cp patches/512.png ./packages/backend/assets/icons/512.png
-cp patches/512.png ./packages/client/assets/icons/about-icon.png
+cp patches/512.png ./packages/client/assets/about-icon.png
+cp patches/fedi.jpg ./packages/client/assets/fedi.jpg
 cp patches/*.json5 ./packages/client/src/themes/
 git apply patches/store.patch &> /dev/null
 echo "Patched files!"
