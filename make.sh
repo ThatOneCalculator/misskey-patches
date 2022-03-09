@@ -10,6 +10,7 @@ fdfind -t f -x sed -i 's/https:\/\/xn--931a.moe\/assets\/not-found.jpg/https:\/\
 sed -i 's/https:\/\/www.google.com/https:\/\/gowogle.voring.me/g' ./packages/client/src/components/google.vue
 sed -i 's/Misskey expands the world of the Fediverse/Stop posting about Among Us/g' ./locales/en-US.yml
 sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
+sed -i 's/3000/1500/g' ./packages/backend/src/const.ts
 cp patches/favicon.ico ./packages/backend/assets/favicon.ico
 cp patches/favicon.png ./packages/backend/assets/favicon.png
 cp patches/apple-touch-icon.png ./packages/backend/assets/apple-touch-icon.png
