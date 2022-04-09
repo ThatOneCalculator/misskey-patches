@@ -22,6 +22,7 @@ cp patches/512.png ./packages/client/assets/about-icon.png
 cp patches/fedi.jpg ./packages/client/assets/fedi.jpg
 cp patches/*.json5 ./packages/client/src/themes/
 git apply patches/store.patch &> /dev/null
+git apply patches/welcome.patch &> /dev/null
 echo "Patched files!"
 yarn
 NODE_ENV=production npm run build
