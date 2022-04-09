@@ -7,7 +7,7 @@ index e6a2f4290..db455473a 100644
  	reactions: {
  		where: 'account',
 -		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮']
-+		default: ['👍', '❤️', '😆', '🤔', '😮', '😥', '😇', '🤬', ':calchigh:', ':calcmentalbreakdowncrying:', ':calcgunarm:', ':starewutdog:', ':blobcat_attention:', ':bunlove:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
++		default: ['👍', '😆', '😮', '😥', '🤬', ':calc:', ':calc_smile_hearts:', ':calc_headpats:', ':calc_innocent:', ':calcthonk:', ':calcflushed:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calcgunarm:', ':starewutdog:', ':blobcat_attention:', ':bunlove:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
  	},
  	mutedWords: {
  		where: 'account',
