@@ -9,6 +9,7 @@ The patches used on https://stop.voring.me
 - Turn off new note sound
 - Search syntax URL
 - Images (error/info/unknown user)
+- Signup screen message
 
 ### Usage:
 ```
