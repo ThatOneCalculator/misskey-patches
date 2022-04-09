@@ -1,0 +1,39 @@
+diff --git a/./packages/client/src/pages/welcome.entrance.a.vue b/./packages/client/src/pages/welcome.entrance.a.vue
+index 47e1f1234..25197aadd 100644
+--- a/./packages/client/src/pages/welcome.entrance.a.vue
++++ b/./packages/client/src/pages/welcome.entrance.a.vue
+@@ -7,11 +7,13 @@
+ 		<div class="shape2"></div>
+ 		<img src="/client-assets/misskey.svg" class="misskey"/>
+ 		<div class="emojis">
+-			<MkEmoji :normal="true" :no-style="true" emoji="👍"/>
+-			<MkEmoji :normal="true" :no-style="true" emoji="❤"/>
+-			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
+-			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
+-			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calc:"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calc_smile_hearts:"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calc_headpats:"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calc_innocent:"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calchigh:"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calcmentalbreakdowncrying:"/>
++			<MkEmoji :normal="true" :no-style="true" emoji=":calcgunarm:"/>
+ 		</div>
+ 		<div class="main _panel">
+ 			<div class="bg">
+@@ -43,6 +45,15 @@
+ 						<template #n><b>{{ onlineUsersCount }}</b></template>
+ 					</I18n>
+ 				</div>
++				<div class="status">
++					<div class="action">
++						<MkButton gradate inline onclick="window.location.href='https://stop.voring.me/@thatonecalculator/pages/tos'">TOS/Info</MkButton>
++					</div>
++					<p>Other voring.me services:</p>
++					<MkButton inline style="margin-right: 12px;" onclick="window.location.href='https://stepbro.voring.me'">Pastebin</MkButton>
++					<MkButton inline style="margin-right: 12px; onclick="window.location.href='https://place.voring.me'">Place</MkButton>
++					<MkButton inline onclick="window.location.href='https://relay.voring.me'">Relay</MkButton>
++				</div>
+ 				<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
+ 			</div>
+ 		</div>
