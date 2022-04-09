@@ -15,9 +15,9 @@ index 47e1f1234..25197aadd 100644
 +			<MkEmoji :normal="true" :no-style="true" emoji=":calc_smile_hearts:"/>
 +			<MkEmoji :normal="true" :no-style="true" emoji=":calc_headpats:"/>
 +			<MkEmoji :normal="true" :no-style="true" emoji=":calc_innocent:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calchigh:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calcmentalbreakdowncrying:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calcgunarm:"/>
++			<!-- <MkEmoji :normal="true" :no-style="true" emoji=":calchigh:"/> -->
++			<!-- <MkEmoji :normal="true" :no-style="true" emoji=":calcmentalbreakdowncrying:"/> -->
++			<!-- <MkEmoji :normal="true" :no-style="true" emoji=":calcgunarm:"/> -->
  		</div>
  		<div class="main _panel">
  			<div class="bg">
