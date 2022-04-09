@@ -31,7 +31,7 @@ index 47e1f1234..25197aadd 100644
 +					</div>
 +					<p>Other voring.me services:</p>
 +					<MkButton inline style="margin-right: 12px;" onclick="window.location.href='https://stepbro.voring.me'">Pastebin</MkButton>
-+					<MkButton inline style="margin-right: 12px; onclick="window.location.href='https://place.voring.me'">Place</MkButton>
++					<MkButton inline style="margin-right: 12px;" onclick="window.location.href='https://place.voring.me'">Place</MkButton>
 +					<MkButton inline onclick="window.location.href='https://relay.voring.me'">Relay</MkButton>
 +				</div>
  				<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
