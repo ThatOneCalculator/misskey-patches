@@ -7,7 +7,7 @@ index e6a2f4290..db455473a 100644
  	reactions: {
  		where: 'account',
 -		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮']
-+		default: ['👍', '😆', '😮', '😥', '🤬', ':calc:', ':calc_smile_hearts:', ':calc_headpats:', ':calc_innocent:', ':calcthonk:', ':calcflushed:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calcgunarm:', ':starewutdog:', ':blobcat_attention:', ':bunlove:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
++		default: ['👍', ':calc:', ':calc_wink:', ':calc_kiss:', ':calc_shocked:', ':calc_cold_sweat:', ':calc_swear:', ':calc_smile_hearts:', ':calc_headpats:', ':calc_innocent:', ':calcthonk:', ':calcflushed:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calctrollage:', ':calcgunarm:', ':blobcat_attention:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
  	},
  	mutedWords: {
  		where: 'account',
@@ -87,7 +87,7 @@ index e6a2f4290..db455473a 100644
  		mediaVolume: 0.5,
  		sound_masterVolume: 0.3,
 -		sound_note: { type: 'syuilo/down', volume: 1 },
-+		sound_note: { type: 'syuilo/down', volume: 0 },
++		sound_note: { type: 'none', volume: 0 },
  		sound_noteMy: { type: 'syuilo/up', volume: 1 },
  		sound_notification: { type: 'syuilo/pope2', volume: 1 },
  		sound_chat: { type: 'syuilo/pope1', volume: 1 },
