@@ -1,0 +1,13 @@
+diff --git a/packages/client/src/menu.ts b/packages/client/src/menu.ts
+index ebc789810..58392f581 100644
+--- a/packages/client/src/menu.ts
++++ b/packages/client/src/menu.ts
+@@ -116,7 +116,7 @@ export const menuDef = reactive({
+ 		title: 'mentions',
+ 		icon: 'fas fa-at',
+ 		show: computed(() => $i != null),
+-		indicated: computed(() => $i != null && $i.hasUnreadMentions),
++		// indicated: computed(() => $i != null && $i.hasUnreadMentions),
+ 		to: '/my/mentions',
+ 	},
+ 	messages: {
