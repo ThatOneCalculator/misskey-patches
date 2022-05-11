@@ -2,7 +2,7 @@ diff --git a/packages/client/src/pages/welcome.entrance.a.vue b/packages/client/
 index 47e1f1234..25197aadd 100644
 --- a/packages/client/src/pages/welcome.entrance.a.vue
 +++ b/packages/client/src/pages/welcome.entrance.a.vue
-@@ -7,11 +7,15 @@
+@@ -7,11 +7,19 @@
  		<div class="shape2"></div>
  		<img src="/client-assets/misskey.svg" class="misskey"/>
  		<div class="emojis">
@@ -11,15 +11,19 @@ index 47e1f1234..25197aadd 100644
 -			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
 -			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
 -			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_wink:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_kiss:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_shocked:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_cold_sweat:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_swear:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_smile_hearts:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_headpats:"/>
-+			<MkEmoji :normal="true" :no-style="true" emoji=":calc_innocent:"/>
++			<MkEmoji :normal="true" emoji=":calc:"/>
++			<MkEmoji :normal="true" emoji=":calc_wink:"/>
++			<MkEmoji :normal="true" emoji=":calc_laugh:"/>
++			<MkEmoji :normal="true" emoji=":calc_shocked:"/>
++			<MkEmoji :normal="true" emoji=":calc_cold_sweat:"/>
++			<MkEmoji :normal="true" emoji=":calc_swear:"/>
++			<MkEmoji :normal="true" emoji=":calc_woozy:"/>
++			<MkEmoji :normal="true" emoji=":calc_pleading:"/>
++			<MkEmoji :normal="true" emoji=":calc_exhale:"/>
++			<MkEmoji :normal="true" emoji=":calc_smile_hearts:"/>
++			<MkEmoji :normal="true" emoji=":calc_kiss:"/>
++			<MkEmoji :normal="true" emoji=":calc_headpats:"/>
++			<MkEmoji :normal="true" emoji=":calc_innocent:"/>
  		</div>
  		<div class="main _panel">
  			<div class="bg">
