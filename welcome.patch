@@ -40,10 +40,10 @@ index 47e1f1234..25197aadd 100644
 +						<MkButton inline style="margin-right: 12px; margin-bottom: 12px;" onclick="window.location.href='https://stepbro.voring.me'">zer0bin</MkButton>
 +						<MkButton inline style="margin-right: 12px; margin-bottom: 12px;" onclick="window.location.href='https://gowogle.voring.me'">gOwOgle</MkButton>
 +					</div>
-+					<div>
++					<!-- <div>
 +						<MkButton inline style="margin-right: 12px; margin-bottom: 12px;" onclick="window.location.href='https://place.voring.me'">Place</MkButton>
 +						<MkButton inline style="margin-right: 12px; margin-bottom: 12px" onclick="window.location.href='https://relay.voring.me'">Relay</MkButton>
-+					</div>
++					</div> -->
 +				</div>
  				<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
  			</div>
