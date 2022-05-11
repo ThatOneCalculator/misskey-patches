@@ -7,7 +7,7 @@ index 6ab14f43f..62e00b982 100644
  	reactions: {
  		where: 'account',
 -		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮']
-+		default: ['👍', ':calc:', ':calc_wink:', ':calc_laugh:', ':calc_shocked:', ':calc_cold_sweat:', ':calc_swear:', ':calc_woozy:', ':calc_pleading:', ':calc_exhale:', ':calc_smile_hearts:', ':calc_kiss:', ':calc_headpats:', ':calc_innocent:', ':calcthonk:', ':calcflushed:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calctrollage:', ':calcgunarm:', ':blobcat_attention:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
++		default: ['⭐', ':calc:', ':calc_wink:', ':calc_laugh:', ':calc_shocked:', ':calc_cold_sweat:', ':calc_swear:', ':calc_woozy:', ':calc_pleading:', ':calc_exhale:', ':calc_smile_hearts:', ':calc_kiss:', ':calc_headpats:', ':calc_innocent:', ':calcthonk:', ':calcflushed:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calctrollage:', ':calcgunarm:', ':blobcat_attention:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
  	},
  	mutedWords: {
  		where: 'account',
