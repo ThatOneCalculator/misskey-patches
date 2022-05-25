@@ -36,7 +36,7 @@ index 6ab14f43f..62e00b982 100644
  		]
  	},
  	visibility: {
-@@ -151,7 +155,7 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -151,11 +155,11 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	useBlurEffectForModal: {
  		where: 'device',
@@ -44,6 +44,11 @@ index 6ab14f43f..62e00b982 100644
 +		default: false
  	},
  	useBlurEffect: {
+ 		where: 'device',
+-		default: true
++		default: false
+ 	},
+ 	showFixedPostForm: {
  		where: 'device',
 @@ -183,15 +187,15 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
