@@ -33,8 +33,8 @@ index 47e1f1234..25197aadd 100644
  				</div>
 +				<div class="status">
 +					<div class="action">
-+						<MkButton gradate inline style="margin-right: 12px;" onclick="window.location.href='https://stop.voring.me/@thatonecalculator/pages/tos'">TOS/Info</MkButton>
 +						<MkButton gradate inline style="margin-right: 12px;" onclick="window.location.href='https://stop.voring.me/featured'">Browse as guest</MkButton>
++						<MkButton inline style="margin-right: 12px;" onclick="window.location.href='https://stop.voring.me/@thatonecalculator/pages/tos'">TOS/Info</MkButton>
 +					</div>
 +					<p>Other voring.me services:</p>
 +					<div>
