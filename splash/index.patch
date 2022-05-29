@@ -1,0 +1,41 @@
+diff --git a/packages/backend/src/server/web/index.ts b/packages/backend/src/server/web/index.ts
+index 2feee72..d0a62ac 100644
+--- a/packages/backend/src/server/web/index.ts
++++ b/packages/backend/src/server/web/index.ts
+@@ -457,6 +457,28 @@ router.get('/streaming', async ctx => {
+ 	ctx.set('Cache-Control', 'private, max-age=0');
+ });
+ 
++// MOTD
++const motd = [
++	'If you\'re on mobile, you can tap install/add to homescreen to get the app!',
++	'You can click the time a note was posted to get a full view of the note.',
++	'Wanna find people to follow? Head over to the Explore tab!',
++	'Want more ways to post? You can make blogs in Pages and galleries in Gallery tab.',
++	'You can add cool stuff to notes like CWs, polls, multiple videos/gifs, and audio!',
++	'Use #hashtags to tag notes and reach more people, especially for #art.',
++	'If your note gets popular, it might show up on the Featured tap for up to 3 days!',
++	'Use the 4 buttons at the top (or the top drop-down on mobile) to switch timelines.',
++	'The Fediverse is made up of more than just Misskey.',
++	'Be gay, do crime >:3',
++	'We have over 2,500 custom emojis for use! No Nitro required ;)',
++	'#yeening',
++	'Like Misskey? Send me your money! All of it!!',
++	'Avatars and banners can be GIFs.',
++	'When writing a note, type $ to see a list of cool text effects (mfm).',
++	'Just say \'no\' to computers.',
++	'Tell your friends to join, or else...',
++	'Hatsune Miku is living in my servers.'
++];
++
+ // Render base html for all requests
+ router.get('(.*)', async ctx => {
+ 	const meta = await fetchMeta();
+@@ -467,6 +489,7 @@ router.get('(.*)', async ctx => {
+ 		desc: meta.description,
+ 		icon: meta.iconUrl,
+ 		themeColor: meta.themeColor,
++		randomMOTD: motd[Math.floor(Math.random() * motd.length)],
+ 	});
+ 	ctx.set('Cache-Control', 'public, max-age=15');
+ });
