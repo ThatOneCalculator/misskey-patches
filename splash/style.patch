@@ -2,7 +2,7 @@ diff --git a/packages/backend/src/server/web/style.css b/packages/backend/src/se
 index d59f00f..7c3ec2b 100644
 --- a/packages/backend/src/server/web/style.css
 +++ b/packages/backend/src/server/web/style.css
-@@ -68,3 +68,18 @@ html {
+@@ -68,3 +68,19 @@ html {
  		transform: rotate(360deg);
  	}
  }
@@ -19,5 +19,6 @@ index d59f00f..7c3ec2b 100644
 +	height: 0;
 +	text-align: center;
 +	padding-top: 80px;
++	padding-bottom: 80px;
 +	font-family: sans-serif;
 +}
