@@ -11,6 +11,7 @@ The patches used on https://stop.voring.me
 - Images (error/info/unknown user)
 - Signup screen message
 - Custom error screen
+- MOTD (Thank you [PikaDude!](https://github.com/PikaDude))
 
 ### Usage:
 ```
