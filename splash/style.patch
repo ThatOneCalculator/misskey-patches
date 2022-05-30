@@ -24,7 +24,7 @@ index d59f00f..7c3ec2b 100644
 +       left: 0;
 +       margin: auto;
 +       display: inline-block;
-+       width: 100%;
++       width: 70%;
 +       height: 0;
 +       text-align: center;
 +       padding-top: 100px;
