@@ -15,10 +15,10 @@ index d59f00f..7c3ec2b 100644
 +	left: 0;
 +	margin: auto;
 +	display: inline-block;
-+	width: 50%;
++	width: 100%;
 +	height: 0;
 +	text-align: center;
-+	padding-top: 80px;
-+	padding-bottom: 80px;
++	padding-top: 180px;
++	padding-bottom: 180px;
 +	font-family: sans-serif;
 +}
