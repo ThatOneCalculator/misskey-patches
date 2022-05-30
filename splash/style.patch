@@ -1,0 +1,23 @@
+diff --git a/packages/backend/src/server/web/style.css b/packages/backend/src/server/web/style.css
+index d59f00f..7c3ec2b 100644
+--- a/packages/backend/src/server/web/style.css
++++ b/packages/backend/src/server/web/style.css
+@@ -68,3 +68,18 @@ html {
+ 		transform: rotate(360deg);
+ 	}
+ }
++
++#splashText {
++	position: absolute;
++	top: 0;
++	right: 0;
++	bottom: 0;
++	left: 0;
++	margin: auto;
++	display: inline-block;
++	width: 50%;
++	height: 0;
++	text-align: center;
++	padding-top: 80px;
++	font-family: sans-serif;
++}
