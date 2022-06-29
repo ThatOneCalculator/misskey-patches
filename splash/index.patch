@@ -1,8 +1,8 @@
 diff --git a/packages/backend/src/server/web/index.ts b/packages/backend/src/server/web/index.ts
-index 2feee72..d0a62ac 100644
+index be95becb6..3ff89245d 100644
 --- a/packages/backend/src/server/web/index.ts
 +++ b/packages/backend/src/server/web/index.ts
-@@ -457,6 +457,28 @@ router.get('/streaming', async ctx => {
+@@ -501,6 +501,46 @@ router.get('/streaming', async ctx => {
  	ctx.set('Cache-Control', 'private, max-age=0');
  });
  
@@ -28,14 +28,36 @@ index 2feee72..d0a62ac 100644
 +	'Hatsune Miku is living in my servers.'
 +];
 +
++// Loading icons
++const loading_icons = [
++	'/static-assets/icons/calc.png',
++	'/static-assets/icons/calc_cold_sweat.png',
++	'/static-assets/icons/calc_exhale.png',
++	'/static-assets/icons/calc_flushed.png',
++	'/static-assets/icons/calc_headpats.png',
++	'/static-assets/icons/calc_innocent.png',
++	'/static-assets/icons/calc_kiss.png',
++	'/static-assets/icons/calc_laugh.png',
++	'/static-assets/icons/calc_pleading.png',
++	'/static-assets/icons/calc_shocked.png',
++	'/static-assets/icons/calc_smile_hearts.png',
++	'/static-assets/icons/calc_swear.png',
++	'/static-assets/icons/calc_wink.png',
++	'/static-assets/icons/calc_woozy.png'
++]
++
  // Render base html for all requests
  router.get('(.*)', async ctx => {
  	const meta = await fetchMeta();
-@@ -467,6 +489,7 @@ router.get('(.*)', async ctx => {
+@@ -511,8 +551,10 @@ router.get('(.*)', async ctx => {
  		desc: meta.description,
  		icon: meta.iconUrl,
  		themeColor: meta.themeColor,
 +		randomMOTD: motd[Math.floor(Math.random() * motd.length)],
++		loadingIcon: loading_icons[Math.floor(Math.random() * loading_icons.length)],
  	});
- 	ctx.set('Cache-Control', 'public, max-age=15');
+-	ctx.set('Cache-Control', 'public, max-age=15');
++	ctx.set('Cache-Control', 'public, max-age=5');
  });
+ 
+ // Register router
