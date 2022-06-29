@@ -1,5 +1,5 @@
 diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
-index e6a2f4290..db455473a 100644
+index 6ab14f43f..62e00b982 100644
 --- a/packages/client/src/store.ts
 +++ b/packages/client/src/store.ts
 @@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
@@ -7,7 +7,7 @@ index e6a2f4290..db455473a 100644
  	reactions: {
  		where: 'account',
 -		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮']
-+		default: ['👍', '❤️', '😆', '🤔', '😮', '😥', '😇', '🤬', ':calchigh:', ':calcmentalbreakdowncrying:', ':calcgunarm:', ':starewutdog:', ':blobcat_attention:', ':bunlove:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:']
++		default: ['⭐', ':calc:', ':calc_wink:', ':calc_laugh:', ':calc_shocked:', ':calc_cold_sweat:', ':calc_swear:', ':calc_woozy:', ':calc_pleading:', ':calc_exhale:', ':calc_smile_hearts:', ':calc_kiss:', ':calc_headpats:', ':calc_innocent:', ':calc_flushed:', ':calcthonk:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calctrollage:', ':calcgunarm:', ':blobcat_attention:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:'],
  	},
  	mutedWords: {
  		where: 'account',
@@ -32,11 +32,11 @@ index e6a2f4290..db455473a 100644
 +			'-',
 +			'favorites',
 +			'drive',
-+			'clips',
++			'clips'
  		]
  	},
  	visibility: {
-@@ -151,11 +154,11 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -151,11 +155,11 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	useBlurEffectForModal: {
  		where: 'device',
@@ -50,12 +50,7 @@ index e6a2f4290..db455473a 100644
  	},
  	showFixedPostForm: {
  		where: 'device',
-@@ -179,19 +182,19 @@ export const defaultStore = markRaw(new Storage('base', {
- 	},
- 	instanceTicker: {
- 		where: 'device',
--		default: 'remote' as 'none' | 'remote' | 'always'
-+		default: 'always' as 'none' | 'remote' | 'always'
+@@ -183,15 +187,15 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	reactionPickerSize: {
  		where: 'device',
@@ -74,20 +69,12 @@ index e6a2f4290..db455473a 100644
  	},
  	reactionPickerUseDrawerForMobile: {
  		where: 'device',
-@@ -257,13 +260,13 @@ type Plugin = {
-  */
- export class ColdDeviceStorage {
- 	public static default = {
--		lightTheme: require('@/themes/l-light.json5') as Theme,
--		darkTheme: require('@/themes/d-dark.json5') as Theme,
-+		lightTheme: require('@/themes/l-rosepinedawn.json5') as Theme,
-+		darkTheme: require('@/themes/d-rosepine.json5') as Theme,
- 		syncDeviceDarkMode: true,
+@@ -266,7 +270,7 @@ export class ColdDeviceStorage {
  		plugins: [] as Plugin[],
  		mediaVolume: 0.5,
  		sound_masterVolume: 0.3,
 -		sound_note: { type: 'syuilo/down', volume: 1 },
-+		sound_note: { type: 'syuilo/down', volume: 0 },
++		sound_note: { type: 'none', volume: 0 },
  		sound_noteMy: { type: 'syuilo/up', volume: 1 },
  		sound_notification: { type: 'syuilo/pope2', volume: 1 },
  		sound_chat: { type: 'syuilo/pope1', volume: 1 },
