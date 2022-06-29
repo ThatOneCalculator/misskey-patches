@@ -30,20 +30,20 @@ index be95becb6..3ff89245d 100644
 +
 +// Loading icons
 +const loading_icons = [
-+	'/static-assets/icons/calc.png',
-+	'/static-assets/icons/calc_cold_sweat.png',
-+	'/static-assets/icons/calc_exhale.png',
-+	'/static-assets/icons/calc_flushed.png',
-+	'/static-assets/icons/calc_headpats.png',
-+	'/static-assets/icons/calc_innocent.png',
-+	'/static-assets/icons/calc_kiss.png',
-+	'/static-assets/icons/calc_laugh.png',
-+	'/static-assets/icons/calc_pleading.png',
-+	'/static-assets/icons/calc_shocked.png',
-+	'/static-assets/icons/calc_smile_hearts.png',
-+	'/static-assets/icons/calc_swear.png',
-+	'/static-assets/icons/calc_wink.png',
-+	'/static-assets/icons/calc_woozy.png'
++	'/static-assets/loading_icons/calc.png',
++	'/static-assets/loading_icons/calc_cold_sweat.png',
++	'/static-assets/loading_icons/calc_exhale.png',
++	'/static-assets/loading_icons/calc_flushed.png',
++	'/static-assets/loading_icons/calc_headpats.png',
++	'/static-assets/loading_icons/calc_innocent.png',
++	'/static-assets/loading_icons/calc_kiss.png',
++	'/static-assets/loading_icons/calc_laugh.png',
++	'/static-assets/loading_icons/calc_pleading.png',
++	'/static-assets/loading_icons/calc_shocked.png',
++	'/static-assets/loading_icons/calc_smile_hearts.png',
++	'/static-assets/loading_icons/calc_swear.png',
++	'/static-assets/loading_icons/calc_wink.png',
++	'/static-assets/loading_icons/calc_woozy.png'
 +]
 +
  // Render base html for all requests
