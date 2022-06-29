@@ -6,7 +6,7 @@ The patches used on https://stop.voring.me
 - Default emojis
 - Turn off new note sound
 - Search syntax URL
-- Images (error/info/unknown user) (not needed once https://github.com/misskey-dev/misskey/pull/8778 is merged)
+- Images (error/info/unknown user)
 - Signup screen message
 - Custom error screen
 - MOTD (Thank you [PikaDude!](https://github.com/PikaDude))
