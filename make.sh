@@ -7,6 +7,7 @@ rm -rf ./rosepinethemes
 fdfind -t f -x sed -i 's/badges\/info.jpg/badges\/info.png/g' {} \;
 fdfind -t f -x sed -i 's/badges\/not-found.jpg/badges\/not-found.png/g' {} \;
 fdfind -t f -x sed -i 's/badges\/error.jpg/badges\/error.png/g' {} \;
+cp -r patches/splash/icons/ ./packages/backend/assets/
 sed -i 's/https:\/\/www.google.com/https:\/\/gowogle.voring.me/g' ./packages/client/src/components/google.vue
 sed -i 's/Misskey expands the world of the Fediverse/Stop posting about Among Us/g' ./locales/en-US.yml
 sed -i 's/86b300/00beff/g' ./packages/backend/src/server/web/views/base.pug
