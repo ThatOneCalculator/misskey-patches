@@ -1,13 +1,13 @@
 diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
-index 6ab14f43f..62e00b982 100644
+index a273a46c7..28c34afa1 100644
 --- a/packages/client/src/store.ts
 +++ b/packages/client/src/store.ts
 @@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	reactions: {
  		where: 'account',
--		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮']
-+		default: ['⭐', ':calc:', ':calc_wink:', ':calc_laugh:', ':calc_shocked:', ':calc_cold_sweat:', ':calc_swear:', ':calc_woozy:', ':calc_pleading:', ':calc_exhale:', ':calc_smile_hearts:', ':calc_kiss:', ':calc_headpats:', ':calc_innocent:', ':calc_flushed:', ':calcthonk:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calctrollage:', ':calcgunarm:', ':blobcat_attention:', ':amongass:', ':spamtroll:', ':flab:', ':sans_bonk:', ':ralseidead:'],
+-		default: ['👍', '❤️', '😆', '🤔', '😮', '🎉', '💢', '😥', '😇', '🍮'],
++		default: ['⭐', ':calc:', ':calc_wink:', ':calc_laugh:', ':calc_shocked:', ':calc_cold_sweat:', ':calc_swear:', ':calc_woozy:', ':calc_pleading:', ':calc_exhale:', ':calc_smile_hearts:', ':calc_kiss:', ':calc_headpats:', ':calc_innocent:', ':calc_flushed:', ':calcthonk:', ':calchigh:', ':calcmentalbreakdowncrying:', ':calctrollage:', ':calcgunarm:', ':calcspunchbop:'],
  	},
  	mutedWords: {
  		where: 'account',
@@ -32,21 +32,21 @@ index 6ab14f43f..62e00b982 100644
 +			'-',
 +			'favorites',
 +			'drive',
-+			'clips'
- 		]
++			'clips',
+ 		],
  	},
  	visibility: {
 @@ -151,11 +155,11 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	useBlurEffectForModal: {
  		where: 'device',
--		default: true
-+		default: false
+-		default: true,
++		default: false,
  	},
  	useBlurEffect: {
  		where: 'device',
--		default: true
-+		default: false
+-		default: true,
++		default: false,
  	},
  	showFixedPostForm: {
  		where: 'device',
@@ -54,18 +54,18 @@ index 6ab14f43f..62e00b982 100644
  	},
  	reactionPickerSize: {
  		where: 'device',
--		default: 1
-+		default: 3
+-		default: 1,
++		default: 3,
  	},
  	reactionPickerWidth: {
  		where: 'device',
--		default: 1
-+		default: 3
+-		default: 1,
++		default: 3,
  	},
  	reactionPickerHeight: {
  		where: 'device',
--		default: 2
-+		default: 3
+-		default: 2,
++		default: 3,
  	},
  	reactionPickerUseDrawerForMobile: {
  		where: 'device',
