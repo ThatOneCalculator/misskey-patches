@@ -23,7 +23,6 @@ cp patches/fedi.jpg ./packages/client/assets/fedi.jpg
 cp patches/*.json5 ./packages/client/src/themes/
 git apply patches/store.patch &> /dev/null
 git apply patches/welcome.patch &> /dev/null
-git apply patches/menu.patch &> /dev/null
 git apply patches/splash/index.patch &> /dev/null
 git apply patches/splash/base.patch &> /dev/null
 git apply patches/splash/style.patch &> /dev/null
