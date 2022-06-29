@@ -10,6 +10,7 @@ The patches used on https://stop.voring.me
 - Signup screen message
 - Custom error screen
 - MOTD (Thank you [PikaDude!](https://github.com/PikaDude))
+- Random icon on loading screen
 
 ### Usage:
 ```
