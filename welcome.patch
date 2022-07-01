@@ -1,52 +1,38 @@
-diff --git a/packages/client/src/pages/welcome.entrance.a.vue b/packages/client/src/pages/welcome.entrance.a.vue
-index 47e1f1234..25197aadd 100644
+diff --git a/packages/client/src/pages/welcome.entrance.a.vue b/welcome.entrance.a.vue
+index b78a37eab..8b017bc4e 100644
 --- a/packages/client/src/pages/welcome.entrance.a.vue
-+++ b/packages/client/src/pages/welcome.entrance.a.vue
++++ b/welcome.entrance.a.vue
 @@ -7,11 +7,20 @@
- 		<div class="shape2"></div>
- 		<img src="/client-assets/misskey.svg" class="misskey"/>
- 		<div class="emojis">
--			<MkEmoji :normal="true" :no-style="true" emoji="👍"/>
--			<MkEmoji :normal="true" :no-style="true" emoji="❤"/>
--			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
--			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
--			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
-+			<MkEmoji :normal="true" emoji=":calc:"/>
-+			<MkEmoji :normal="true" emoji=":calc_wink:"/>
-+			<MkEmoji :normal="true" emoji=":calc_laugh:"/>
-+			<MkEmoji :normal="true" emoji=":calc_shocked:"/>
-+			<MkEmoji :normal="true" emoji=":calc_cold_sweat:"/>
-+			<MkEmoji :normal="true" emoji=":calc_swear:"/>
-+			<MkEmoji :normal="true" emoji=":calc_woozy:"/>
-+			<MkEmoji :normal="true" emoji=":calc_pleading:"/>
-+			<MkEmoji :normal="true" emoji=":calc_exhale:"/>
-+			<MkEmoji :normal="true" emoji=":calc_smile_hearts:"/>
-+			<MkEmoji :normal="true" emoji=":calc_kiss:"/>
-+			<MkEmoji :normal="true" emoji=":calc_headpats:"/>
-+			<MkEmoji :normal="true" emoji=":calc_innocent:"/>
-+			<MkEmoji :normal="true" emoji=":calc_flushed:"/>
- 		</div>
- 		<div class="main _panel">
- 			<div class="bg">
-@@ -43,6 +42,21 @@
- 						<template #n><b>{{ onlineUsersCount }}</b></template>
- 					</I18n>
- 				</div>
-+				<div class="status">
-+					<div class="action">
-+						<MkButton gradate inline style="margin-right: 12px;" onclick="window.location.href='https://stop.voring.me/featured'">Browse as guest</MkButton>
-+						<MkButton inline style="margin-right: 12px;" onclick="window.location.href='https://stop.voring.me/@thatonecalculator/pages/tos'">TOS/Info</MkButton>
-+					</div>
-+					<p>Other voring.me services:</p>
-+					<div>
-+						<MkButton inline style="margin-right: 12px; margin-bottom: 12px;" onclick="window.location.href='https://stepbro.voring.me'">zer0bin</MkButton>
-+						<MkButton inline style="margin-right: 12px; margin-bottom: 12px;" onclick="window.location.href='https://gowogle.voring.me'">gOwOgle</MkButton>
-+					</div>
-+					<!-- <div>
-+						<MkButton inline style="margin-right: 12px; margin-bottom: 12px;" onclick="window.location.href='https://place.voring.me'">Place</MkButton>
-+						<MkButton inline style="margin-right: 12px; margin-bottom: 12px" onclick="window.location.href='https://relay.voring.me'">Relay</MkButton>
-+					</div> -->
-+				</div>
- 				<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
- 			</div>
- 		</div>
+                <div class="shape2"></div>
+                <img src="/client-assets/misskey.svg" class="misskey"/>
+                <div class="emojis">
+-                       <MkEmoji :normal="true" :no-style="true" emoji="👍"/>
+-                       <MkEmoji :normal="true" :no-style="true" emoji="❤"/>
+-                       <MkEmoji :normal="true" :no-style="true" emoji="😆"/>
+-                       <MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
+-                       <MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
++                       <MkEmoji :normal="true" emoji=":calc:"/>
++                       <MkEmoji :normal="true" emoji=":calc_wink:"/>
++                       <MkEmoji :normal="true" emoji=":calc_laugh:"/>
++                       <MkEmoji :normal="true" emoji=":calc_shocked:"/>
++                       <MkEmoji :normal="true" emoji=":calc_cold_sweat:"/>
++                       <MkEmoji :normal="true" emoji=":calc_swear:"/>
++                       <MkEmoji :normal="true" emoji=":calc_woozy:"/>
++                       <MkEmoji :normal="true" emoji=":calc_pleading:"/>
++                       <MkEmoji :normal="true" emoji=":calc_exhale:"/>
++                       <MkEmoji :normal="true" emoji=":calc_smile_hearts:"/>
++                       <MkEmoji :normal="true" emoji=":calc_kiss:"/>
++                       <MkEmoji :normal="true" emoji=":calc_headpats:"/>
++                       <MkEmoji :normal="true" emoji=":calc_innocent:"/>
++                       <MkEmoji :normal="true" emoji=":calc_flushed:"/>
+                </div>
+                <div class="main">
+                        <img :src="$instance.iconUrl || $instance.faviconUrl || '/favicon.ico'" alt="" class="icon"/>
+@@ -28,6 +37,7 @@
+                                <div class="action">
+                                        <MkButton inline rounded gradate data-cy-signup style="margin-right: 12px;" @click="signup()">{{ i18n.ts.signup }}</MkButton>
+                                        <MkButton inline rounded data-cy-signin @click="signin()">{{ i18n.ts.login }}</MkButton>
++                                       <MkButton inline rounded onclick="window.location.href='https://stop.voring.me/featured'">Browse as guest</MkButton>
+                                </div>
+                        </div>
+                </div>
