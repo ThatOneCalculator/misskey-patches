@@ -1,7 +1,7 @@
-diff --git a/packages/client/src/pages/welcome.entrance.a.vue b/welcome.entrance.a.vue
+diff --git a/packages/client/src/pages/welcome.entrance.a.vue b/packages/client/src/pages/welcome.entrance.a.vue
 index b78a37eab..8b017bc4e 100644
 --- a/packages/client/src/pages/welcome.entrance.a.vue
-+++ b/welcome.entrance.a.vue
++++ b/packages/client/src/pages/welcome.entrance.a.vue
 @@ -7,11 +7,20 @@
                 <div class="shape2"></div>
                 <img src="/client-assets/misskey.svg" class="misskey"/>
