@@ -1,5 +1,5 @@
 diff --git a/packages/client/src/store.ts b/packages/client/src/store.ts
-index a273a46c7..28c34afa1 100644
+index a3545c836..a5eedd9ce 100644
 --- a/packages/client/src/store.ts
 +++ b/packages/client/src/store.ts
 @@ -53,7 +53,7 @@ export const defaultStore = markRaw(new Storage('base', {
@@ -11,7 +11,7 @@ index a273a46c7..28c34afa1 100644
  	},
  	mutedWords: {
  		where: 'account',
-@@ -68,16 +68,20 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -68,15 +68,13 @@ export const defaultStore = markRaw(new Storage('base', {
  		where: 'deviceAccount',
  		default: [
  			'notifications',
@@ -19,29 +19,18 @@ index a273a46c7..28c34afa1 100644
 -			'drive',
 +			'messaging',
  			'followRequests',
++			'favorites',
  			'-',
- 			'featured',
  			'explore',
 -			'announcements',
++			'channels',
  			'search',
- 			'-',
+-			'-',
 -			'ui',
-+			'pages',
-+			'gallery',
-+			'groups',
-+			'-',
-+			'favorites',
-+			'drive',
-+			'clips',
  		],
  	},
  	visibility: {
-@@ -151,11 +155,11 @@ export const defaultStore = markRaw(new Storage('base', {
- 	},
- 	useBlurEffectForModal: {
- 		where: 'device',
--		default: true,
-+		default: false,
+@@ -165,7 +163,7 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	useBlurEffect: {
  		where: 'device',
@@ -50,7 +39,7 @@ index a273a46c7..28c34afa1 100644
  	},
  	showFixedPostForm: {
  		where: 'device',
-@@ -183,15 +187,15 @@ export const defaultStore = markRaw(new Storage('base', {
+@@ -193,15 +191,15 @@ export const defaultStore = markRaw(new Storage('base', {
  	},
  	reactionPickerSize: {
  		where: 'device',
@@ -69,7 +58,16 @@ index a273a46c7..28c34afa1 100644
  	},
  	reactionPickerUseDrawerForMobile: {
  		where: 'device',
-@@ -266,7 +270,7 @@ export class ColdDeviceStorage {
+@@ -253,7 +251,7 @@ export const defaultStore = markRaw(new Storage('base', {
+ 	},
+ 	enterSendsMessage: {
+ 		where: 'device',
+-		default: false,
++		default: true,
+ 	},
+ }));
+
+@@ -284,7 +282,7 @@ export class ColdDeviceStorage {
  		plugins: [] as Plugin[],
  		mediaVolume: 0.5,
  		sound_masterVolume: 0.3,
@@ -78,3 +76,18 @@ index a273a46c7..28c34afa1 100644
  		sound_noteMy: { type: 'syuilo/up', volume: 1 },
  		sound_notification: { type: 'syuilo/pope2', volume: 1 },
  		sound_chat: { type: 'syuilo/pope1', volume: 1 },
+@@ -308,6 +306,14 @@ export class ColdDeviceStorage {
+ 	}
+
+ 	public static set<T extends keyof typeof ColdDeviceStorage.default>(key: T, value: typeof ColdDeviceStorage.default[T]): void {
++		// 呼び出し側のバグ等で undefined が来ることがある
++		// undefined を文字列として localStorage に入れると参照する際の JSON.parse でコケて不具合の元になるため無視
++		// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
++		if (value === undefined) {
++			console.error(`attempt to store undefined value for key '${key}'`);
++			return;
++		}
++
+ 		localStorage.setItem(PREFIX + key, JSON.stringify(value));
+
+ 		for (const watcher of this.watchers) {
