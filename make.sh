@@ -32,6 +32,7 @@ git apply patches/welcome.patch &> /dev/null
 git apply patches/splash/index.patch &> /dev/null
 git apply patches/splash/base.patch &> /dev/null
 git apply patches/splash/style.patch &> /dev/null
+git apply patches/star-is-like.patch &> /dev/null
 echo "Patched files!"
 #yarn
 NODE_ENV=production npm run build
