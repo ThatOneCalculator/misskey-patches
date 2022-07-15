@@ -10,6 +10,7 @@ The patches used on https://stop.voring.me
 - Signup screen message
 - Custom error screen
 - MOTD (Thank you [PikaDude!](https://github.com/PikaDude))
+- Star is like (Made by [Johann150](https://github.com/Johann150))
 - Random icon on loading screen
 
 ### Usage:
